@@ -1,0 +1,113 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Mar 09, 2022 at 08:30 AM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `votedb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `name` varchar(25) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `mobile` varchar(10) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `message` varchar(500) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`name`, `email`, `mobile`, `subject`, `message`) VALUES
+('', '', '', '', ''),
+('vishal singh', 'vishalsingh798521@gmail.com', '7985216376', 'hello i am vishal singh, i am a student in goveernment polytechnic college.', 'hlo how are you'),
+('yash raj', 'yashStark@gmail.com', '7985739376', 'my name is yash raj', 'i want to contact you'),
+('manu', 'visitmaneesha@gmail.com', '6389350867', 'vote', 'india is great country .'),
+('YASHRAj', 'starkyashraj40@gmail.com', '7266929936', '5hy4g3r', 'gt4t4r');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE IF NOT EXISTS `feedback` (
+  `name` varchar(25) NOT NULL,
+  `comment` varchar(500) NOT NULL,
+  `star` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `feedback`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE IF NOT EXISTS `login` (
+  `userId` varchar(40) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  UNIQUE KEY `userId` (`userId`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`userId`, `password`) VALUES
+('admin@gmail.com', 'abc'),
+('vishalsingh798521@gmail.com', 'sdthsgra'),
+('yashStark@gmail.com', 'qwEWTWEYTR'),
+('Abhi@gmail.com', 'hjgcvb.'),
+('stark321@gmail.com', 'asdfgh'),
+('starkyashraj40@gmail.com', 'utiu8');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `register`
+--
+
+CREATE TABLE IF NOT EXISTS `register` (
+  `name` varchar(30) NOT NULL,
+  `mobile` varchar(12) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `address` varchar(200) NOT NULL,
+  `photo` varchar(500) NOT NULL,
+  `password` varchar(25) NOT NULL,
+  `role` varchar(20) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`name`, `mobile`, `email`, `address`, `photo`, `password`, `role`) VALUES
+('vishal singh', '7984216376', 'vishalsingh798521@gmail.com', 'Semray Ramnagar Barabanki', 'WIN_20210908_08_44_05_Pro.jpg', 'sdthsgra', '2'),
+('yash raj', '9891887423', 'yashStark@gmail.com', 'allhabad', 'WIN_20210906_08_15_57_Pro.jpg', 'qwEWTWEYTR', '2'),
+('admin', '9865783223', 'admin@gmail.com', 'lko', 'WIN_20210304_14_07_14_Pro.jpg', 'jhgfghjkj', '1'),
+('admin@gmail.com', '4657680989', 'Abhi@gmail.com', 'jhxtg', 'WIN_20210913_08_27_54_Pro.jpg', 'hjgcvb.', '2'),
+('vishal singh', '7984216376', 'vishalsingh798521@gmail.com', 'GPA Gonda', 'WIN_20210908_08_44_05_Pro.jpg', '12345', '2'),
+('vishal singh', '7984216376', 'vishalsingh798521@gmail.com', 'GPA Gonda', 'WIN_20210913_08_27_54_Pro.jpg', '12345678', '2'),
+('vishal singh', '7984216376', 'vishalsingh798521@gmail.com', 'Semray Ramnagar Barabanki', 'WIN_20210913_08_27_54_Pro.jpg', 'abcds', '2'),
+('vishal singh', '7984216376', 'vishalsingh798521@gmail.com', 'Semray Ramnagar Barabanki', 'WIN_20210908_08_44_05_Pro.jpg', 'abvcd', '2'),
+('vishal singh', '7984216376', 'vishalsingh798521@gmail.com', 'Semray Ramnagar Barabanki', 'WIN_20210913_08_27_54_Pro.jpg', 'abcdes', '2'),
+('yas Raj stark', '9821345687', 'stark321@gmail.com', 'ayodhya', 'WIN_20210906_08_15_57_Pro.jpg', 'asdfgh', '2'),
+('manish', '7266929936', 'starkyashraj40@gmail.com', 'jfhhkklyg bfyhkyi', 'WIN_20210908_08_44_05_Pro.jpg', 'utiu8', '2');

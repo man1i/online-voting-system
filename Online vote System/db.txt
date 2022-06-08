@@ -1,0 +1,105 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: May 28, 2022 at 06:24 AM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Database: `votedb`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE IF NOT EXISTS `contact` (
+  `name` varchar(25) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `mobile` varchar(10) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `message` varchar(500) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`name`, `email`, `mobile`, `subject`, `message`) VALUES
+('', '', '', '', ''),
+('vishal singh', 'vishalsingh798521@gmail.com', '7985216376', 'hello i am vishal singh, i am a student in goveernment polytechnic college.', 'hlo how are you'),
+('yash raj', 'yashStark@gmail.com', '7985739376', 'my name is yash raj', 'i want to contact you'),
+('manu', 'visitmaneesha@gmail.com', '6389350867', 'vote', 'india is great country .'),
+('YASHRAj', 'starkyashraj40@gmail.com', '7266929936', '5hy4g3r', 'gt4t4r'),
+('mani', 'visitmanisha@gmail.com', '6389350867', 'php', 'india is great country');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE IF NOT EXISTS `feedback` (
+  `name` varchar(25) NOT NULL,
+  `comment` varchar(500) NOT NULL,
+  `star` varchar(50) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `feedback`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `login`
+--
+
+CREATE TABLE IF NOT EXISTS `login` (
+  `userId` varchar(40) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  UNIQUE KEY `userId` (`userId`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`userId`, `password`) VALUES
+('admin@gmail.com', 'abc'),
+('vishalsingh798521@gmail.com', 'sdthsgra'),
+('yashStark@gmail.com', 'qwEWTWEYTR'),
+('Abhi@gmail.com', 'hjgcvb.'),
+('stark321@gmail.com', 'asdfgh'),
+('starkyashraj40@gmail.com', 'utiu8'),
+('golu@321gmail.com', 'aszxs');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL,
+  `mobile` varchar(10) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `role` int(1) NOT NULL,
+  `status` int(1) NOT NULL,
+  `votes` int(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `user`
+--
+

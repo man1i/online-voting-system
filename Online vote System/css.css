@@ -1,0 +1,217 @@
+<style type="text/css">
+  {
+  color: white;
+  font-size: 15px;
+}
+.d1
+{
+  border-left: 1px solid black;
+  height: 200px;
+  margin-top: 20px;
+} 
+.rr1
+{
+  border-left: 1px solid white;
+  height: 38px;
+  margin-top: 5px;
+} 
+.rrr3
+{
+  border-right: 1px solid white;
+  height: 600px;
+  margin-top: 5px;
+}
+.rr2
+{
+  border-top: 1px solid white;
+  height: 300px;
+  margin-top: 5px;
+}
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
+#n1
+{
+  color: white;
+  font-size: 15px;
+}
+.cc1
+{
+  margin-top: 30px;
+  -webkit-box-shadow: 1px -1px 4px 3px rgba(166,166,166,0.58);
+-moz-box-shadow: 1px -1px 4px 3px rgba(166,166,166,0.58);
+box-shadow: 1px -1px 4px 3px rgba(166,166,166,0.58);
+
+}
+.panel-pricing {
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.panel-pricing:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 58px;
+}
+.panel-pricing .list-group-item {
+  color: #777777;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+a.facebook {
+    background: #3b5998;
+}
+
+a.twitter {
+    background: #1da1f2;
+}
+
+a.dribble {
+    background: #ea4c89;
+}
+
+a.google {
+    background: #F44336;
+  }
+  .social li {
+    display: inline-block;
+}
+a.youtube{
+  background:red;
+}
+
+.social li a {
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 50%;
+}
+
+.social li a span {
+    color: #fff;
+    line-height: 34px;
+}
+
+.intro-header {
+  color: #f8f8f8;
+  text-align: center;
+}
+
+.containerr{
+margin-top:50px;
+background-color:black;
+width:100%;
+position:absolute;
+height:150px;
+}
+.custom-tab-content{
+color:#fff;
+font-family: 'Open Sans', sans-serif;
+}
+@media(min-width: 768px) {
+  .field-label-responsive {
+    padding-top: .5rem;
+    text-align: right;
+  }
+}
+
+
+
+
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+	</style>
